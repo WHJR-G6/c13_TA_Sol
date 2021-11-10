@@ -1,3 +1,22 @@
+var jack,jack2;
+var platform,platform2;
+var jack_image, platform_image;
+var platform1,platform2,platform3,platform4,platform5,platform6;
+
+function preload(){
+  jack_image=loadImage("images/jack2.png")
+  
+ 
+platform1 = loadImage("images/platform1.png")
+platform2 = loadImage("images/platform2.png")
+platform3 = loadImage("images/platform3.png")
+platform4 = loadImage("images/platform4.png")
+platform5 = loadImage("images/platform5.png")
+platform6 = loadImage("images/platform6.png")
+
+}
+
+
 function setup() {
   createCanvas(500, 500);
  //bg = createSprite(250,250,500,500);
@@ -13,14 +32,9 @@ function setup() {
 }
 
 function draw() {
-  background(0);
+  background("#F2F5B6");
 
-  //calculate and display score
-    score = Math.round(frameCount/10);
-
-  // printing score
-  
-    
+ 
   if(keyDown("up"))
   {
     player.velocityY=-10
@@ -47,7 +61,7 @@ function draw() {
   drawSprites();
   textSize(20);
   fill(255);
-  text("Score " + score , 350,50);
+  
 }
 
 function spawnPlatform(){
