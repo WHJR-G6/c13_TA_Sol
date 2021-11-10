@@ -52,7 +52,7 @@ function draw() {
 
 function spawnPlatform(){
   if(frameCount % 40 ===0){
-    class 13
+  
     platform.destroy();
    
     var platforms = createSprite(250,0,50,50);
